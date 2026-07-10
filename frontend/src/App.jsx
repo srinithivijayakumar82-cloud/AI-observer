@@ -23,7 +23,7 @@ function Observer(){
   const [result, setResult]=useState(null)
   async function observe(){
     setLoading(true);
-    const responsed=await fetch('http://127.0.0.1:8000/observe', {
+    const responsed=await fetch('https://ai-observer.onrender.com/observe', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
